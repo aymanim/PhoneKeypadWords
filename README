@@ -1,0 +1,20 @@
+
+As an exercise in dynamic programming, I decided to write this script which take a (phone) number 
+and produces a list of possible words based on the standard phone keypads.
+I haven't researched the different kinds of keypads. I am just going with what my android shows me.
+
+It does produce duplicates, and does not check for validity in the english language
+
+
+To use it:
+python convert.py {number} {length of word}
+
+Example:
+python convert.py 2222222 3
+
+will produce different size 3 sets from {a,b,c} like
+aaa,aba,aca, ... etc..
+
+
+
+

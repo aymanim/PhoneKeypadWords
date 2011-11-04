@@ -21,7 +21,7 @@ def printlen(size):
 	for i in range(length):
 		if not len(table[i][size]) == 0:
 			for s in table[i][size]:
-				print "".join(s), " ", 
+				print "".join(s) 
 			
 
 vals = [
@@ -116,30 +116,10 @@ for j in range(2, length+1):
 
 
 
+
+
+
+printlen(2)
 printlen(3)
-
-
-"""
-for i in range(1, length+1):
-	for j in range(1, length+1):
-		print " LOOKING AT ", i, j
-		printtable(table)
-		solution = []
-		if j > 1 and i < length + 1:
-			print " :::" , table[i][j-1]
-			for g in table[i][j-1]:
-				for a in table[i+1][j-1]:
-					x = g
-					x[j] = a[j]
-					solution.append(x)
-			table[i][j] = solution
-
-"""
-
-
-
-
-
-
-
-
+printlen(4)
+printlen(5)
