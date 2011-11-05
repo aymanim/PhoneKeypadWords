@@ -21,7 +21,12 @@ def printlen(size):
 	for i in range(length):
 		if not len(table[i][size]) == 0:
 			for s in table[i][size]:
-				print "".join(s) 
+				for c in s:
+					if c == "":
+						print "_",
+					else:
+						print c,
+				print "."
 			
 
 vals = [
